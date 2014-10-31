@@ -1,11 +1,19 @@
 [color]
-	ui = true
+	ui = auto
 [core]
 	filemode = false
 	editor = emacsclient -nw -c -a \"\"
 [alias]
-	st = status
-	co = checkout
-	ci = commit
-	df = diff
-	ds = diff --staged
+	br=branch
+	co=checkout
+	ci=commit
+	st=status
+	df=diff
+	dfn=diff --name-only
+	ds=diff --staged
+	dsn=diff --staged --name-only
+	rh=reset --hard
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=28800
